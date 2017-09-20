@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="shimul-lab.is-best.net voy dir">
+  <component name="PublishConfigData" serverName="voyage practice (vpr)">
     <serverData>
       <paths name="PHP beyond the basics site">
         <serverdata>
@@ -26,7 +26,14 @@
       <paths name="shimul-lab.is-best.net voy dir">
         <serverdata>
           <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="voyage practice (vpr)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
