@@ -12,72 +12,190 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
-    line-height:1;
+    line-height: 1;
+    background-color: #eaeaea;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
 }
 
 nav ul {
-    list-style:none;
+    list-style: none;
 }
 
 blockquote, q {
-    quotes:none;
+    quotes: none;
 }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content:'';
-    content:none;
+    content: '';
+    content: none;
 }
 
 a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 /************ Reset styles ends here ************/
-
-
+/* top bar styling starts */
 #topBar {
-    height: 30px;
+    height: 40px;
     width: 100%;
     background-color: #2c3e50;
-    color: gray;
+    color: #fff;
+    display: flex; /* it is given so topBarWrapper can use align-items: center */
 }
 
 #topBarWrapper {
     width: 1360px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between; /* make topBarLeftSection left aligned and topBarLeftSection right aligned */
+    align-items: center; /* center aligns texts in topBar */
 }
 
 #topBarLeftSection {
     display: flex;
 
 }
+
 #topBarLeftSection ul {
     display: flex;
+    padding-right: 15px;
+
 }
+
+#topBarLeftSection ul li {
+    list-style: none;
+    padding-left: 10px;
+}
+
+#topBarLeftSection ul li:nth-child(1) {
+    list-style: none;
+    padding-left: 0;
+}
+
 #topBarRightSection {
     display: flex;
 }
+
 #topBarRightSection ul {
     display: flex;
+
 }
+
+#topBarRightSection ul li {
+    list-style: none;
+}
+
+/* top bar styling ends */
+
+/* nav bar starts here */
+#navBar {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#navBarWrapper {
+    height: 100px;
+    width: 1360px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Make the logo left align and nav bar right align */
+}
+
+#navBarWrapper nav {
+    display: flex; /* display flex used so align-items can be applied in its child "nav ul" */
+}
+
+#navBarWrapper nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    padding-left: 35px;
+    font-weight: 700;
+}
+
+#navBarWrapper #logoHolder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul li a {
+    color: inherit;
+}
+
+nav ul li a:hover {
+    color: aquamarine;
+}
+nav ul li a:active {
+    color: aquamarine;
+}
+
+
+
+/* nav bar ends here */
+
+/* social icons styling starts */
+.socialIcons {
+    display: flex;
+}
+
+.socialIcons ul li {
+    padding: 3px 7px;
+    border-left: 1px solid #fff;
+    line-height: 40px; /* sets the border height to max */
+    min-width: 15px;
+    transition: all 0.2s ease; /* animation to all social icons */
+
+}
+
+.socialIcons ul li:nth-last-child(1) { /* Last child is given border left and right*/
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.socialIcons .fa-facebook:hover {
+    background: #ffffff;
+    color: royalblue;
+}
+
+.socialIcons .fa-twitter:hover {
+    background-color: #ffffff;
+    color: cornflowerblue;
+}
+
+.socialIcons .fa-linkedin:hover {
+    background-color: #ffffff;
+    color: blue;
+}
+
+.socialIcons .fa-youtube:hover {
+    background-color: #ffffff;
+    color: red;
+}
+
+/* social icons styling ends */
