@@ -149,13 +149,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: aquamarine;
-}
-nav ul li a:active {
-    color: aquamarine;
+    color: #17d3b0;
 }
 
-
+nav ul li a.active {
+    color: #17d3b0;
+}
 
 /* nav bar ends here */
 
